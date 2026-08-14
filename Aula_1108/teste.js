@@ -1,8 +1,8 @@
-// let variavel = "Hello World!";
-// console.log(variavel);
-// variavel = 10;
-// variavel += 1; //variavel = variavel + 1
-// console.log(variavel)
+let variavel = "Hello World!";
+console.log(variavel);
+variavel = 10;
+variavel += 1; //variavel = variavel + 1
+console.log(variavel);
 
 //==, !=, <=, <, >, >= | operadores relacionais (sempre boolean)
 //=== !==
