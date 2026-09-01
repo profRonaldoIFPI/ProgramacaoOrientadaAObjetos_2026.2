@@ -2,6 +2,11 @@
 
 Este repositório foi criado para acompanhar as aulas de **Programação Orientada a Objetos** do curso de TADS. Aqui, cada exemplo, exercício e material prático será organizado em um diretório por aula, facilitando o estudo e a revisão dos conteúdos apresentados em sala.
 
+## 📄 Documentos do Curso
+
+- 📑 [Plano de Ensino 2026.2](./Plano%20de%20Ensino%202026.2.pdf)
+- 📑 [PPC TADS 2023 (POO)](./POO_PPC_TADS_2023.pdf)
+
 ## Objetivo
 
 - Organizar os exemplos de cada aula em diretórios separados.
@@ -10,8 +15,8 @@ Este repositório foi criado para acompanhar as aulas de **Programação Orienta
 
 ## Estrutura do repositório
 
-- `aula-1108/`
-- `aula-1808/`
+- `Aula_1108/`
+- `Aula_1808_Atividade_1/`
 - ...
 
 Cada pasta de aula deve conter:
@@ -22,7 +27,7 @@ Cada pasta de aula deve conter:
 
 ## Conteúdo programático
 
-De acordo com o plano de ensino, o curso cobre:
+De acordo com o [Plano de Ensino](./Plano%20de%20Ensino%202026.2.pdf), o curso cobre:
 
 - Programação Orientada a Objetos: histórico, linguagens e comparações com programação estruturada
 - Conceitos básicos de OOP
@@ -43,3 +48,4 @@ De acordo com o plano de ensino, o curso cobre:
 - Carga horária: **60h/a**
 - Módulo: **II**
 - Pré-requisito: **Algoritmos e Programação**
+
