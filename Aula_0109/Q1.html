@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- HYPERTEXT MARKUP LANGUAGE -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Atividade 2</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Atividade 2 - Questão 1</legend>
+      <label for="entrada">Informe um número: </label>
+      <br />
+      <input type="number" id="entrada" />
+      <br />
+      <button id="execute">Execute</button>
+      <br />
+      <p id="saida">Saída</p>
+    </fieldset>
+
+    <script>
+      function verificarNumero(n) {
+        let saida;
+        if (n % 2 === 0) {
+          console.log(n + " é par.");
+          saida = n + " é par.\n";
+        } else {
+          console.log(n + " é impar.");
+          saida = n + " é impar.\n";
+        }
+        if (n === 0) {
+          console.log(n + " é zero.");
+          saida += n + " é zero.";
+        } else if (n > 0) {
+          console.log(n + " é positivo.");
+          saida += n + " é positivo.";
+        } else {
+          console.log(n + " é negativo.");
+          saida += n + " é negativo.";
+        }
+        return saida;
+      }
+
+      const botao = document.getElementById("execute");
+      const entrada = document.getElementById("entrada");
+      const saida = document.getElementById("saida");
+
+      botao.addEventListener("click", () => {
+        let num = entrada.value;
+        saida.textContent = verificarNumero(num);
+      });
+    </script>
+  </body>
+</html>
