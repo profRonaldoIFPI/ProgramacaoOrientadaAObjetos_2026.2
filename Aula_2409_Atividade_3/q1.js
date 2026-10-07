@@ -37,3 +37,7 @@ comanda1.adicionarItem("Caipirinha", 12);
 comanda1.adicionarItem("Caipifruta", 18);
 comanda1.adicionarItem("Pizza GG", 18);
 comanda1.fecharConta();
+
+
+
+
