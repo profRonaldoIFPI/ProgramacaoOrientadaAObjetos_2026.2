@@ -64,11 +64,43 @@ Crie uma função sobrecarregada `unir` que realize a concatenação de duas str
 ### Questão 11: Vetor Genérico de Formas Geométricas (Generalização)
 Implemente uma classe abstrata `FiguraGeometrica` com um método abstrato `calcularArea(): number`. Crie subclasses concretas `Circulo` e `Retangulo`. Em seguida, crie um array generalizado do tipo `FiguraGeometrica[]` contendo instâncias mistas de ambas as formas.
 
+```mermaid
+classDiagram
+    class FiguraGeometrica {
+        <<abstract>>
+        +calcularArea(): number*
+    }
+
+    class Circulo {
+        +calcularArea(): number
+    }
+
+    class Retangulo {
+        +calcularArea(): number
+    }
+
+    FiguraGeometrica <|-- Circulo
+    FiguraGeometrica <|-- Retangulo
+```
+
 ### Questão 12: Downcasting Seguro com `instanceof`
 Utilizando o vetor generalizado da Questão 11, percorra os elementos utilizando um laço e aplique o operador `instanceof` para realizar o *downcasting* e identificar o tipo específico de cada objeto no escopo.
 
 ### Questão 13: Hierarquia de Animais do IFPI
 Crie uma classe base `AnimalBase` (com espécie) e subclasses `Bovino` e `Peixe`. Desenvolva uma função externa que receba um objeto do tipo genérico `AnimalBase` e processe suas características gerais.
+
+```mermaid
+classDiagram
+    class AnimalBase {
+        +especie: string
+    }
+
+    class Bovino
+    class Peixe
+
+    AnimalBase <|-- Bovino
+    AnimalBase <|-- Peixe
+```
 
 ### Questão 14: Sistema de Vendas de Carros
 Com base nas atividades clássicas de vendas do IFPI, crie uma superclasse `VendaCarro` e subclasses especializadas (`Avista`, `Cartao` e `Boleto`), sobrescrevendo o método `calculaVenda()` de acordo com regras de desconto específicas para cada modalidade de pagamento.
