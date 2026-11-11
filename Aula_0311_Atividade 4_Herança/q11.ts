@@ -2,7 +2,7 @@
  * Implemente uma classe abstrata FiguraGeometrica com um método abstrato calcularArea(): number. Crie subclasses concretas Circulo e Retangulo. Em seguida, crie um array generalizado do tipo FiguraGeometrica[] contendo instâncias mistas de ambas as formas. 
  * */
 
-abstract class FiguraGeometrica{
+abstract class FiguraGeometrica{ //superclasse
     abstract calcularArea(): number; 
 }
 
